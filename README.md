@@ -18,4 +18,4 @@ Rules:
 
 
 -------------------------------------------------------------------------------------------------------------------------
-This program simulates a number of Block Ten games ("Simulator.exe 100" will simulate 100 games) and returns their results in a list format. It also prints each game.
+This is a C# console app that simulates a number of Block Ten games ("Simulator.exe 100" will simulate 100 games) and returns their results in a list format. It also prints each game.
