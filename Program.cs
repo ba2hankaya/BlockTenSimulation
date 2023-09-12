@@ -47,9 +47,12 @@ namespace Block10
                         if(pairs_list.Count()==0){break;}
 
                         //if there is a pair, print the indexes so it can be observed
-                        foreach(int a in pairs_list[0]){
-                            Log(a.ToString());
-                        }
+                        string s = string.Format("Remove Pair:{0},{1}",pairs_list[0][0].ToString(),pairs_list[0][1].ToString());
+			Log(s);
+			
+			//foreach(int a in pairs_list[0]){
+                        //    Log(a.ToString());
+                        //}
 
                         //Remove the pair and replace it with cards from the deck
                         RemoveOnePairAndReplaceIt(pairs_list[0]);
@@ -70,7 +73,7 @@ namespace Block10
                 }
 
                 //after the game ends, print the number of pairs eleminated
-                Log(count.ToString());
+                Log("Total Pairs Removed: " + count.ToString());
 
                 //add the number of pairs eliminated to the list to compare results in the future
                 results_list.Add(count);
